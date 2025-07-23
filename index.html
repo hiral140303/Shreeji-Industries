@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechManufacture Pro - Leading Manufacturing Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#64748b',
+                        accent: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <i data-lucide="settings" class="text-white w-6 h-6"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold text-primary">TechManufacture Pro</h1>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="infrastructure.html" class="nav-link">Infrastructure</a>
+                    <a href="quality.html" class="nav-link">Quality</a>
+                    <a href="clientele.html" class="nav-link">Clientele</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="py-4 space-y-2">
+                    <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Home</a>
+                    <a href="about.html" class="block py-2 text-gray-700 hover:text-primary">About Us</a>
+                    <a href="products.html" class="block py-2 text-gray-700 hover:text-primary">Products</a>
+                    <a href="infrastructure.html" class="block py-2 text-gray-700 hover:text-primary">Infrastructure</a>
+                    <a href="quality.html" class="block py-2 text-gray-700 hover:text-primary">Quality</a>
+                    <a href="clientele.html" class="block py-2 text-gray-700 hover:text-primary">Clientele</a>
+                    <a href="contact.html" class="block py-2 text-gray-700 hover:text-primary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-gradient-to-br from-primary to-blue-800 flex items-center relative overflow-hidden">
+        <div class="container mx-auto px-4 z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 animate-slide-up">
+                        Leading Manufacturing 
+                        <span class="text-accent">Excellence</span>
+                    </h1>
+                    <p class="text-xl mb-8 opacity-90 animate-slide-up delay-200">
+                        Delivering world-class manufacturing solutions with cutting-edge technology, 
+                        superior quality, and unmatched precision for over two decades.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 animate-slide-up delay-400">
+                        <a href="products.html" class="bg-accent hover:bg-yellow-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 text-center">
+                            Explore Products
+                        </a>
+                        <a href="contact.html" class="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all duration-300 text-center">
+                            Get Quote
+                        </a>
+                    </div>
+                </div>
+                <div class="relative animate-float">
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop" 
+                         alt="Manufacturing Excellence" 
+                         class="rounded-lg shadow-2xl">
+                    <div class="absolute -bottom-4 -right-4 bg-accent text-white p-4 rounded-lg shadow-lg">
+                        <div class="text-2xl font-bold">25+</div>
+                        <div class="text-sm">Years Experience</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Animated Background Elements -->
+        <div class="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full animate-pulse"></div>
+        <div class="absolute bottom-20 right-10 w-32 h-32 bg-white/5 rounded-full animate-bounce-slow"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Why Choose Us</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    We combine decades of experience with cutting-edge technology to deliver 
+                    manufacturing solutions that exceed expectations.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="shield-check" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Quality Assurance</h3>
+                    <p class="text-gray-600">ISO 9001:2015 certified with rigorous quality control at every stage of production.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="zap" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Advanced Technology</h3>
+                    <p class="text-gray-600">State-of-the-art machinery and automation for precision manufacturing.</p>
+                </div>
+                
+                <div class="feature-card bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i data-lucide="users" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Expert Team</h3>
+                    <p class="text-gray-600">Highly skilled engineers and technicians with years of industry experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Preview -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Product Range</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Comprehensive manufacturing solutions across multiple industries
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="product-card group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                        <i data-lucide="cpu" class="text-white w-16 h-16 group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Electronics</h3>
+                        <p class="text-gray-600">Precision electronic components and assemblies</p>
+                    </div>
+                </div>
+                
+                <div class="product-card group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
+                        <i data-lucide="car" class="text-white w-16 h-16 group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Automotive</h3>
+                        <p class="text-gray-600">High-quality automotive parts and components</p>
+                    </div>
+                </div>
+                
+                <div class="product-card group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
+                        <i data-lucide="factory" class="text-white w-16 h-16 group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Industrial</h3>
+                        <p class="text-gray-600">Heavy-duty industrial machinery components</p>
+                    </div>
+                </div>
+                
+                <div class="product-card group bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="h-48 bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
+                        <i data-lucide="wrench" class="text-white w-16 h-16 group-hover:scale-110 transition-transform duration-300"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Tools</h3>
+                        <p class="text-gray-600">Precision tools and equipment</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="products.html" class="bg-primary hover:bg-blue-700 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 inline-block">
+                    View All Products
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="stat-card">
+                    <div class="text-4xl font-bold mb-2 counter" data-target="500">0</div>
+                    <div class="text-xl opacity-90">Happy Clients</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-4xl font-bold mb-2 counter" data-target="25">0</div>
+                    <div class="text-xl opacity-90">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-4xl font-bold mb-2 counter" data-target="1000">0</div>
+                    <div class="text-xl opacity-90">Projects Completed</div>
+                </div>
+                <div class="stat-card">
+                    <div class="text-4xl font-bold mb-2 counter" data-target="50">0</div>
+                    <div class="text-xl opacity-90">Expert Team</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-gray-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Get in touch with our experts today and discover how we can help bring your manufacturing vision to life.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-accent hover:bg-yellow-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                    Get Quote Now
+                </a>
+                <a href="tel:+918200731517" class="whatsapp-btn border-2 border-white text-white hover:bg-white hover:text-gray-800 px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    Call Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <i data-lucide="settings" class="text-white w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">TechManufacture Pro</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">Leading manufacturing solutions with cutting-edge technology and superior quality.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors">Products</a></li>
+                        <li><a href="quality.html" class="text-gray-400 hover:text-white transition-colors">Quality</a></li>
+                        <li><a href="clientele.html" class="text-gray-400 hover:text-white transition-colors">Clientele</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Custom Manufacturing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Quality Testing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Design Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-primary"></i>
+                            <span class="text-gray-400">123 Industrial Ave, Tech City, TC 12345</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+                            <a href="https://wa.me/918200731517?text=Hello%20I%20want%20to%20inquire%20about%20your%20products" 
+                               class="text-gray-400 hover:text-white transition-colors whatsapp-btn">+91 82007 31517</a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-primary"></i>
+                            <a href="mailto:info@techmanufacture.com" class="text-gray-400 hover:text-white transition-colors">info@techmanufacture.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 TechManufacture Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

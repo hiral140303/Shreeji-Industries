@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality & Certifications - TechManufacture Pro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#64748b',
+                        accent: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/95 backdrop-blur-sm shadow-lg z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <i data-lucide="settings" class="text-white w-6 h-6"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold text-primary">TechManufacture Pro</h1>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="products.html" class="nav-link">Products</a>
+                    <a href="infrastructure.html" class="nav-link">Infrastructure</a>
+                    <a href="quality.html" class="nav-link active">Quality</a>
+                    <a href="clientele.html" class="nav-link">Clientele</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="md:hidden hidden" id="mobile-menu">
+                <div class="py-4 space-y-2">
+                    <a href="index.html" class="block py-2 text-gray-700 hover:text-primary">Home</a>
+                    <a href="about.html" class="block py-2 text-gray-700 hover:text-primary">About Us</a>
+                    <a href="products.html" class="block py-2 text-gray-700 hover:text-primary">Products</a>
+                    <a href="infrastructure.html" class="block py-2 text-gray-700 hover:text-primary">Infrastructure</a>
+                    <a href="quality.html" class="block py-2 text-gray-700 hover:text-primary">Quality</a>
+                    <a href="clientele.html" class="block py-2 text-gray-700 hover:text-primary">Clientele</a>
+                    <a href="contact.html" class="block py-2 text-gray-700 hover:text-primary">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 bg-gradient-to-br from-primary to-blue-800 text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <h1 class="text-5xl font-bold mb-6 animate-slide-up">Quality & Certifications</h1>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto animate-slide-up delay-200">
+                    Unwavering commitment to quality excellence through rigorous testing, 
+                    international certifications, and continuous improvement processes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Policy -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-800 mb-6">Our Quality Policy</h2>
+                    <p class="text-gray-600 mb-6">
+                        At TechManufacture Pro, quality is not just a goal—it's our fundamental commitment. 
+                        We believe that exceptional quality is the cornerstone of customer satisfaction 
+                        and long-term business success.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
+                                <i data-lucide="check" class="text-white w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Zero Defect Manufacturing</h4>
+                                <p class="text-gray-600">Continuous improvement to achieve defect-free production</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
+                                <i data-lucide="check" class="text-white w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Customer Satisfaction</h4>
+                                <p class="text-gray-600">Meeting and exceeding customer expectations consistently</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="w-6 h-6 bg-primary rounded-full flex items-center justify-center mt-1">
+                                <i data-lucide="check" class="text-white w-4 h-4"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-1">Continuous Improvement</h4>
+                                <p class="text-gray-600">Regular review and enhancement of quality processes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?w=600&h=400&fit=crop" 
+                         alt="Quality Control" 
+                         class="rounded-lg shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 bg-accent text-white p-6 rounded-lg shadow-lg">
+                        <div class="text-2xl font-bold">99.9%</div>
+                        <div class="text-sm">Quality Rate</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Management System -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Quality Management System</h2>
+                <p class="text-xl text-gray-600">Systematic approach to quality assurance</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="clipboard-check" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Planning</h3>
+                    <p class="text-gray-600">Comprehensive quality planning for all processes and products</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="settings" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Implementation</h3>
+                    <p class="text-gray-600">Systematic implementation of quality control measures</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="search" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Monitoring</h3>
+                    <p class="text-gray-600">Continuous monitoring and measurement of quality parameters</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="trending-up" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">Improvement</h3>
+                    <p class="text-gray-600">Data-driven continuous improvement initiatives</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testing & Inspection -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Testing & Inspection Capabilities</h2>
+                <p class="text-xl text-gray-600">Advanced testing equipment and methodologies</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="ruler" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">Dimensional Testing</h3>
+                    <p class="text-gray-600">Coordinate Measuring Machines (CMM) for precise dimensional verification</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="zap" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">Material Testing</h3>
+                    <p class="text-gray-600">Comprehensive material property testing including tensile and hardness tests</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="eye" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">Visual Inspection</h3>
+                    <p class="text-gray-600">Automated optical inspection systems for surface quality verification</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="waves" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">NDT Testing</h3>
+                    <p class="text-gray-600">Non-destructive testing including ultrasonic and magnetic particle inspection</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="thermometer" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">Environmental Testing</h3>
+                    <p class="text-gray-600">Temperature, humidity, and vibration testing for product reliability</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                    <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
+                        <i data-lucide="activity" class="text-primary w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">Performance Testing</h3>
+                    <p class="text-gray-600">Functional testing to verify product performance under operating conditions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">International Certifications</h2>
+                <p class="text-xl text-gray-600">Recognized global standards compliance</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="award" class="text-primary w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">ISO 9001:2015</h3>
+                    <p class="text-gray-600 mb-4">Quality Management System certification ensuring consistent quality delivery</p>
+                    <div class="text-sm text-green-600 font-semibold">Valid until 2026</div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="leaf" class="text-primary w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">ISO 14001:2015</h3>
+                    <p class="text-gray-600 mb-4">Environmental Management System for sustainable manufacturing practices</p>
+                    <div class="text-sm text-green-600 font-semibold">Valid until 2026</div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="shield-check" class="text-primary w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">ISO 45001:2018</h3>
+                    <p class="text-gray-600 mb-4">Occupational Health and Safety Management System certification</p>
+                    <div class="text-sm text-green-600 font-semibold">Valid until 2026</div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="check-circle" class="text-primary w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">CE Marking</h3>
+                    <p class="text-gray-600 mb-4">European Conformity marking for product safety and compliance</p>
+                    <div class="text-sm text-green-600 font-semibold">Current</div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="truck" class="text-primary w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">IATF 16949</h3>
+                    <p class="text-gray-600 mb-4">Automotive Quality Management System standard compliance</p>
+                    <div class="text-sm text-green-600 font-semibold">Valid until 2025</div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 text-center">
+                    <div class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i data-lucide="globe" class="text-primary w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 text-gray-800">RoHS Compliance</h3>
+                    <p class="text-gray-600 mb-4">Restriction of Hazardous Substances compliance for electronics</p>
+                    <div class="text-sm text-green-600 font-semibold">Current</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Metrics -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Quality Performance Metrics</h2>
+                <p class="text-xl text-gray-600">Our commitment to excellence in numbers</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">99.9%</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Quality Rate</h3>
+                    <p class="text-gray-600">Products meeting quality standards</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">0.1%</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Return Rate</h3>
+                    <p class="text-gray-600">Customer return percentage</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">98%</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">On-Time Delivery</h3>
+                    <p class="text-gray-600">Delivery performance rate</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <span class="text-2xl font-bold text-white">95%</span>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-gray-800">Customer Satisfaction</h3>
+                    <p class="text-gray-600">Customer satisfaction rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quality Commitment -->
+    <section class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-6">Our Quality Commitment</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-3xl mx-auto">
+                We pledge to deliver products that not only meet but exceed your expectations. 
+                Our quality assurance process ensures that every product leaving our facility 
+                represents the highest standards of excellence.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html" class="bg-accent hover:bg-yellow-600 text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105">
+                    Discuss Quality Requirements
+                </a>
+                <a href="https://wa.me/918200731517?text=Hello%20I%20want%20to%20know%20about%20your%20quality%20standards" 
+                   class="whatsapp-btn border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    Quality Inquiry
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <i data-lucide="settings" class="text-white w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">TechManufacture Pro</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6">Leading manufacturing solutions with cutting-edge technology and superior quality.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-lucide="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors">Products</a></li>
+                        <li><a href="quality.html" class="text-gray-400 hover:text-white transition-colors">Quality</a></li>
+                        <li><a href="clientele.html" class="text-gray-400 hover:text-white transition-colors">Clientele</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Custom Manufacturing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Quality Testing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Design Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Consulting</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-6">Contact Info</h4>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-primary"></i>
+                            <span class="text-gray-400">123 Industrial Ave, Tech City, TC 12345</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="phone" class="w-5 h-5 text-primary"></i>
+                            <a href="https://wa.me/918200731517?text=Hello%20I%20want%20to%20inquire%20about%20your%20products" 
+                               class="text-gray-400 hover:text-white transition-colors whatsapp-btn">+91 82007 31517</a>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <i data-lucide="mail" class="w-5 h-5 text-primary"></i>
+                            <a href="mailto:info@techmanufacture.com" class="text-gray-400 hover:text-white transition-colors">info@techmanufacture.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 TechManufacture Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
